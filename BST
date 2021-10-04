@@ -1,4 +1,4 @@
-class Node
+class Node:
     def __init__(self, key):
         self.left = None
         self.right = None
@@ -9,7 +9,7 @@ def insert(root, key):
     if root is None:
         return Node(key)
     else:
-        if root.val = key:
+        if root.val == key:
             return root
         elif root.val < key:
             root.right = insert(root.right, key)
